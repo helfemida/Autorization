@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registerForm" class="form">
+        <h2>Register</h2>
+        <input type="text" id="regUsername" placeholder="Username" required>
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button onclick="registerUser()">Register</button>
+    </div>
+
+    <div id="loginForm" class="form">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button onclick="loginUser()">Login</button>
+    </div>
+
+    <div id="userContent" class="hidden-content">
+        <h2>User-specific Content</h2>
+        <p>Welcome, <span id="loggedInUser"></span>!</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hidden-content {
+    display: none;
+}
